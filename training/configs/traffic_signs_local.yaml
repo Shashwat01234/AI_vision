@@ -1,0 +1,62 @@
+path: C:/visual_impaired/archive (3)/traffic_subset
+train: train
+val: valid
+nc: 57
+names:
+  0: a
+  1: all motor vehicle prohibited
+  2: axle load limit
+  3: compulsary ahead
+  4: compulsary keep left
+  5: compulsary keep right
+  6: compulsary turn left ahead
+  7: compulsary turn right ahead
+  8: cross road
+  9: dangerous dip
+  10: falling rocks
+  11: gap in median
+  12: give way
+  13: guarded level crossing
+  14: height limit
+  15: horn prohibited
+  16: hospital ahead
+  17: hump or rough road
+  18: left hand curve
+  19: left reverse bend
+  20: left turn prohibited
+  21: loose gravel
+  22: men at work
+  23: narrow bridge ahead
+  24: narrow road ahead
+  25: no entry
+  26: no parking
+  27: no stopping or standing
+  28: overtaking prohibited
+  29: pass either side
+  30: pedestrian crossing
+  31: petrol pump ahead
+  32: quay side or river bank
+  33: restriction ends
+  34: right hand curve
+  35: right reverse bend
+  36: right turn prohibited
+  37: road widens ahead
+  38: roundabout
+  39: school ahead
+  40: side road left
+  41: side road right
+  42: slippery road
+  43: speed limit 100
+  44: speed limit 30
+  45: speed limit 50
+  46: staggered intersection
+  47: steep ascent
+  48: steep descent
+  49: stop
+  50: straight prohibited
+  51: t intersection
+  52: u turn
+  53: u turn prohibited
+  54: unguarded level crossing
+  55: width limit
+  56: y intersection

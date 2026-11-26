@@ -1,0 +1,74 @@
+# Training Hyperparameters Configuration
+# =======================================
+
+# Model
+model:
+  # Primary: YOLO11n (lightweight, fast)
+  base_model: "yolo11n.pt"
+  # Fallback if YOLO11n unavailable
+  fallback_model: "yolov8n.pt"
+  
+# Training
+training:
+  epochs: 80
+  imgsz: 640
+  batch_size: 16          # Reduce if OOM
+  batch_size_fallback: 8  # Auto-reduce on OOM
+  patience: 15            # Early stopping patience
+  
+  # Optimizer
+  optimizer: "auto"
+  lr0: 0.01
+  lrf: 0.01
+  momentum: 0.937
+  weight_decay: 0.0005
+  warmup_epochs: 3.0
+  warmup_momentum: 0.8
+  
+  # Augmentation
+  augmentation:
+    hsv_h: 0.015
+    hsv_s: 0.7
+    hsv_v: 0.4
+    degrees: 10.0
+    translate: 0.1
+    scale: 0.5
+    shear: 2.0
+    flipud: 0.0
+    fliplr: 0.5
+    mosaic: 1.0
+    mixup: 0.1
+    
+  # Other
+  workers: 4
+  seed: 42
+  deterministic: true
+  single_cls: false
+  rect: false
+  cos_lr: true
+  close_mosaic: 10
+  
+# Evaluation
+evaluation:
+  conf_threshold: 0.25
+  iou_threshold: 0.45
+  max_det: 50
+  
+# Export
+export:
+  format: "torchscript"  # or "onnx"
+  imgsz: 640
+  optimize: true
+  
+# Paths
+paths:
+  project: "runs/campus_signs"
+  name: "train"
+  weights_dir: "../../models/custom"
+  
+# Device
+device:
+  # "auto" will use GPU if available, else CPU
+  training: "auto"
+  inference: "cpu"
+

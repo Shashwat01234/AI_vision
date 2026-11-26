@@ -1,0 +1,29 @@
+# Campus Signs Detection - YOLO Training Configuration
+# =====================================================
+# Dataset config for Ultralytics YOLO training
+
+# Paths (relative to dataset root or absolute)
+# These will be set dynamically by training scripts
+path: ./datasets/campus_signs
+train: images/train
+val: images/val
+test: images/test
+
+# Number of classes
+nc: 5
+
+# Class names
+names:
+  0: directional_sign
+  1: department_sign
+  2: safety_sign
+  3: exit_sign
+  4: information_sign
+
+# Class descriptions (for documentation)
+# directional_sign: Signs with arrows indicating directions to locations
+# department_sign: Signs identifying departments, rooms, offices, labs
+# safety_sign: Warning signs, caution signs, hazard symbols
+# exit_sign: Emergency exit signs, EXIT signs
+# information_sign: General information boards, notice boards, maps
+

@@ -1,0 +1,84 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+venv/
+.venv/
+env/
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Environment
+.env
+*.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Storage - uploaded/generated files
+storage/uploads/*
+storage/processed/*
+storage/audio/*
+!storage/uploads/.gitkeep
+!storage/processed/.gitkeep
+!storage/audio/.gitkeep
+
+# Model weights (too large for git)
+models/pretrained/*.pt
+models/pretrained/*.onnx
+models/pretrained/*.bin
+models/pretrained/*.safetensors
+models/custom/*.pt
+models/custom/*.onnx
+!models/pretrained/.gitkeep
+!models/custom/.gitkeep
+# EasyOCR weights
+models/ocr/*.pth
+models/ocr/*.pt
+# Archive / training data (large)
+archive*/
+archive (3)/
+runs/
+# YOLO config
+models/.ultralytics/
+
+# Training data
+training/datasets/
+training/runs/
+training/logs/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Piper TTS voice files
+*.onnx
+*.onnx.json
+
+# Build outputs
+frontend/dist/
+
+# Logs
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
